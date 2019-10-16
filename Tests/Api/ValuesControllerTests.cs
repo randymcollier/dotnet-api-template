@@ -13,7 +13,7 @@ namespace Tests.Api
         public async Task ValuesController_GetSpecificValue_Returns200()
         {
             // Act
-            var response = await _httpClient.GetAsync("/api/values/5").ConfigureAwait(false);
+            var response = await _httpClient.GetAsync("/values/5").ConfigureAwait(false);
 
             // Assert
             Assert.True(response.IsSuccessStatusCode);
@@ -23,7 +23,7 @@ namespace Tests.Api
         public async Task ValuesController_GetSpecificValue_ReturnsString()
         {
             // Act
-            var response = await _httpClient.GetAsync("/api/values/5").ConfigureAwait(false);
+            var response = await _httpClient.GetAsync("/values/5").ConfigureAwait(false);
             var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
             // Assert
@@ -34,7 +34,7 @@ namespace Tests.Api
         public async Task ValuesController_GetValues_Returns200()
         {
             // Act
-            var response = await _httpClient.GetAsync("/api/values").ConfigureAwait(false);
+            var response = await _httpClient.GetAsync("/values").ConfigureAwait(false);
 
             // Assert
             Assert.True(response.IsSuccessStatusCode);
@@ -44,7 +44,7 @@ namespace Tests.Api
         public async Task ValuesController_GetValues_ReturnsListOfStrings()
         {
             // Act
-            var response = await _httpClient.GetAsync("/api/values").ConfigureAwait(false);
+            var response = await _httpClient.GetAsync("/values").ConfigureAwait(false);
             var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
             var result = JsonConvert.DeserializeObject<IEnumerable<string>>(content);
 

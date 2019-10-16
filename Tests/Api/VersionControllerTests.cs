@@ -9,7 +9,7 @@ namespace Tests.Api
         public async Task VersionController_Get_Returns200()
         {
             // Act
-            var response = await _httpClient.GetAsync("/api/version").ConfigureAwait(false);
+            var response = await _httpClient.GetAsync("/version").ConfigureAwait(false);
 
             // Assert
             Assert.True(response.IsSuccessStatusCode);
@@ -19,7 +19,7 @@ namespace Tests.Api
         public async Task VersionController_Get_ReturnsString()
         {
             // Act
-            var response = await _httpClient.GetAsync("/api/version").ConfigureAwait(false);
+            var response = await _httpClient.GetAsync("/version").ConfigureAwait(false);
             var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
             // Assert
