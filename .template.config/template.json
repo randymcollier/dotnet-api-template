@@ -32,7 +32,8 @@
             "**/*.filelist",
             "**/*.user",
             "**/*.lock.json",
-            ".git/**/*"
+            ".git/**/*",
+            "README.md"
           ]
         }
       ]
