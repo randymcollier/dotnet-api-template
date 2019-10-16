@@ -1,7 +1,7 @@
 using System.Net.Http;
 using NUnit.Framework;
 
-namespace Tests.Api
+namespace Template.Tests.Api
 {
     [TestFixture, Category("Integration")]
     public class ApiBaseTest

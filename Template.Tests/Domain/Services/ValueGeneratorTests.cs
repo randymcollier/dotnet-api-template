@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using Domain.Services;
+using Template.Domain.Services;
 using NUnit.Framework;
 
-namespace Tests.Domain.Services
+namespace Template.Tests.Domain.Services
 {
     [TestFixture, Category("Unit")]
     public class ValueGeneratorTests

@@ -1,9 +1,7 @@
-
-
 using System.Reflection;
-using Domain.Contracts;
+using Template.Domain.Contracts;
 
-namespace Domain.Services
+namespace Template.Domain.Services
 {
     public class VersionService : ITellVersions
     {

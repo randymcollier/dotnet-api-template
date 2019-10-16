@@ -1,4 +1,4 @@
-namespace Domain.Contracts
+namespace Template.Domain.Contracts
 {
     public interface ITellVersions
     {

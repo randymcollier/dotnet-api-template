@@ -1,9 +1,9 @@
 using System;
 using System.Reflection;
-using Domain.Contracts;
+using Template.Domain.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Controllers
+namespace Template.Api.Controllers
 {
     [Route("[controller]")]
     [ApiController]

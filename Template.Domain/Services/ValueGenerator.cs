@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Domain.Contracts;
+using Template.Domain.Contracts;
 
-namespace Domain.Services
+namespace Template.Domain.Services
 {
     public class ValueGenerator : IGenerateValues
     {

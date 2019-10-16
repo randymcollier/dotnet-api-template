@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Domain.Contracts
+namespace Template.Domain.Contracts
 {
     public interface IGenerateValues
     {

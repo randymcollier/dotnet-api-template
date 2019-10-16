@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using Api;
+using Template.Api;
 
-namespace Tests.Api
+namespace Template.Tests.Api
 {
     public class ValuesControllerTests : ApiBaseTest
     {

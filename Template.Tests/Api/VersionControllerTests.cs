@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace Tests.Api
+namespace Template.Tests.Api
 {
     public class VersionControllerTests : ApiBaseTest
     {
