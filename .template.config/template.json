@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Randy Collier",
+    "classifications": [ "API" ], 
+    "name": "APITemplate",
+    "identity": "APITemplate",         
+    "groupIdentity":"APITemplate",
+    "shortName": "apisln",
+    "tags": {
+      "language": "C#",
+      "type":"solution"
+    },
+    "sourceName": "Template",
+    "preferNameDirectory": true,
+    "symbols":{
+      "includetest": {
+          "type": "parameter",
+          "datatype": "bool",
+          "defaultValue": "true"
+      }
+    },
+    "sources":[{
+      "modifiers": [{
+        "condition": "(!includetest)",
+        "exclude": [ "Template.Tests/**/*"]
+        }
+      ]
+    }]
+  }
