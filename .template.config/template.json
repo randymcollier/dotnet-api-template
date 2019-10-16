@@ -23,6 +23,17 @@
       "modifiers": [{
         "condition": "(!includetest)",
         "exclude": [ "Template.Tests/**/*"]
+        },
+        {
+          "exclude": [
+            "**/[Bb]in/**",
+            "**/[Oo]bj/**",
+            ".template.config/**/*",
+            "**/*.filelist",
+            "**/*.user",
+            "**/*.lock.json",
+            ".git/**/*"
+          ]
         }
       ]
     }]
